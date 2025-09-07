@@ -1,3 +1,5 @@
+
+
 document.getElementById('donate-now-btn').addEventListener('click',function(event){
     event.preventDefault();
 
@@ -10,6 +12,18 @@ document.getElementById('donate-now-btn').addEventListener('click',function(even
     document.getElementById('reserve-amount').innerText=reserveTotalAmount('reserve-amount')-inputNumber;
 
     document.getElementById('my_modal_1').checked=true;
+
+    // history--------
+    const p =document.createElement('p');
+    p.innerText=`${inputNumber} taka is Donated for flood at noakhali, Bangladesh`;
+    const h3=document.createElement('h3');
+    h3.innerText=new Date();
+    console.log(h3)
+    p.classList.add('text-2xl','font-bold')
+    document.getElementById('donate-history').appendChild(p);
+    document.getElementById('donate-history').appendChild(h3);
+    
+
     
 })
 // donate btn1
@@ -25,6 +39,17 @@ document.getElementById('donate-now-btn1').addEventListener('click',function(eve
     document.getElementById('reserve-amount').innerText=reserveTotalAmount('reserve-amount')-inputNumber;
 
     document.getElementById('my_modal_2').checked=true;
+
+
+    // history--------
+    const p =document.createElement('p');
+    p.innerText=`${inputNumber} taka is Donated for flood Relief in Feni, Bangladesh`;
+    const h3=document.createElement('h3');
+    h3.innerText=new Date();
+    console.log(h3)
+    p.classList.add('text-2xl','font-bold')
+    document.getElementById('donate-history').appendChild(p);
+    document.getElementById('donate-history').appendChild(h3);
     
 })
 // donate btn2
@@ -40,5 +65,16 @@ document.getElementById('donate-now-btn2').addEventListener('click',function(eve
     document.getElementById('reserve-amount').innerText=reserveTotalAmount('reserve-amount')-inputNumber;
 
     document.getElementById('my_modal_3').checked=true;
+
+
+    // history--------
+    const p =document.createElement('p');
+    p.innerText=`${inputNumber} taka is Donated for Aid for Injured in the Quata Movement, Bangladesh`;
+    const h3=document.createElement('h3');
+    h3.innerText=new Date();
+    console.log(h3)
+    p.classList.add('text-2xl','font-bold')
+    document.getElementById('donate-history').appendChild(p);
+    document.getElementById('donate-history').appendChild(h3);
     
 })
