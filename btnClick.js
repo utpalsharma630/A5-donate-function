@@ -2,13 +2,10 @@ function buttonClick(id){
     // const blockBtn=document.getElementById(id).style.background='#B4F461';
 
     document.getElementById('blog-btn').style.background='';
+    
     document.getElementById('donation-btn').style.background='';
     
     document.getElementById('history-btn').style.background='';
-    
-
-
-    
     document.getElementById(id).style.background='#B4F461';
     return ;
     
@@ -21,9 +18,11 @@ function noneBtn(id){
 // blog btn by clicked
 document.getElementById('blog-btn').addEventListener('click',function(){
     
-    buttonClick('blog-btn')
+    buttonClick('blog-btn');
+    window.location.href='blog.html'
     
 })
+
 // donation btn by clicked-------------
 document.getElementById('donation-btn').addEventListener('click', function(){
    

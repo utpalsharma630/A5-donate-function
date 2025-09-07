@@ -14,12 +14,17 @@ document.getElementById('donate-now-btn').addEventListener('click',function(even
     document.getElementById('my_modal_1').checked=true;
 
     // history--------
+    const div=document.createElement('div')
+    div.classList.add('border','border-red-500', 'rounded')
+    document.getElementById('donate-history').appendChild(div);
+
     const p =document.createElement('p');
     p.innerText=`${inputNumber} taka is Donated for flood at noakhali, Bangladesh`;
     const h3=document.createElement('h3');
     h3.innerText=new Date();
     console.log(h3)
     p.classList.add('text-2xl','font-bold')
+    
     document.getElementById('donate-history').appendChild(p);
     document.getElementById('donate-history').appendChild(h3);
     
@@ -42,6 +47,10 @@ document.getElementById('donate-now-btn1').addEventListener('click',function(eve
 
 
     // history--------
+    const div=document.createElement('div')
+    div.classList.add('border','border-red-500', 'rounded')
+    document.getElementById('donate-history').appendChild(div);
+
     const p =document.createElement('p');
     p.innerText=`${inputNumber} taka is Donated for flood Relief in Feni, Bangladesh`;
     const h3=document.createElement('h3');
@@ -68,6 +77,10 @@ document.getElementById('donate-now-btn2').addEventListener('click',function(eve
 
 
     // history--------
+    const div=document.createElement('div')
+    div.classList.add('border','border-red-500', 'rounded')
+    document.getElementById('donate-history').appendChild(div);
+    
     const p =document.createElement('p');
     p.innerText=`${inputNumber} taka is Donated for Aid for Injured in the Quata Movement, Bangladesh`;
     const h3=document.createElement('h3');
