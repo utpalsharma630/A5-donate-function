@@ -1,15 +1,15 @@
 //cash out function declear for a donation
 
 function donateInputNumber(id){
-    const donateInput=document.getElementById(id).value;
-    return parseFloat(donateInput);
+    const donateInput=parseFloat(document.getElementById(id).value);
+    return isNaN(donateInput)? 0:donateInput;
 }
 
 
 // donate out button
-function reserveTotalAmount(id){
-    const totalAmount=document.getElementById(id).innerText;
-    return parseFloat(totalAmount);
+function reserveTotalAmount(){
+    const totalAmount=parseFloat(document.getElementById('reserve-amount').innerText);
+    return isNaN(totalAmount)? 0:totalAmount;
 }
 
 
@@ -17,8 +17,8 @@ function reserveTotalAmount(id){
 // donate add
 
 function donateAddAmount(id){
-    const addAmount=document.getElementById(id).innerText;
-    return parseFloat(addAmount);
+    const addAmount=parseFloat(document.getElementById(id).innerText);
+    return isNaN(addAmount)? 0:addAmount;
 }
 
 
